@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="mainDiv">
+            <header class="header">
+                <span class="logotop">CS50 - Project 0</span>
+                <div>
+                    <a href="index.html"><span>Search</span></a>
+                    <a href="imagesearch.html"><span>Search Images</span></a>
+                    <a href="advancedsearch.html"><span>Advanced Search</span></a>
+                </div>
+            </header>
+            <div class="advanced">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1 style="color:red;">
+                                    Advanced Search
+                                <h1>
+                            </td>
+                        <tr>
+                            <td>
+                                <form action="https://www.google.co.uk/search">
+                                    <label for="all_words">all these words:</label>
+                            </td>
+                            <td> <input type="text" input type="hidden" name="as_q" id="all_words"></td>
+                            <td>
+                                <p class="small">Type the important words: <code>tri-colour rat terrier</code></p></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form action="https://www.google.co.uk/search">
+                                    <label for="exact_words">this exact word or phrase:</label>
+                            </td>
+                            <td> <input type="text" input type="hidden" name="as_epq" id="exact_words"></td>
+                            <td>
+                                <p class="small">Put exact words in quotes: <code>"rat terrier"</code></small></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form action="https://www.google.co.uk/search">
+                                    <label for="any_words">any of these words:</label>
+                            </td>
+                            <td> <input type="text" input type="hidden" name="as_oq" id="any_words"></td>
+                            <td>
+                                <p class="small">Type OR between all the words you want: <code>miniature OR standard</code></p></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <form action="https://www.google.co.uk/search">
+                                    <label for="none_words">none of these words:</label>
+                            </td>
+                            <td> <input type="text" input type="hidden" name="as_eq" id="none_words"></td>
+                            <td>
+                                <p class="small">Put a minus sign just before words that you don't want: <code>-rodent, -"Jack Russell"<code></p></small>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="https://www.google.co.uk/search" id="searchbar">
+                    <div class="buttons">
+                        <input type="submit" value="Advanced Search" class="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

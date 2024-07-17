@@ -9,20 +9,18 @@
             <header class="header">
                 <span class="logotop">CS50 - Project 0</span>
                 <div>
-                    <a href="index.html"><span>Search</span>
+                    <a href="index.html"><span>Search</span></a>
                     <a href="imagesearch.html"><span>Search Images</span></a>
                     <a href="advancedsearch.html"><span>Advanced Search</span></a>
                 </div>
             </header>
             <div class="findDiv">
-                <div class="logo">
-                    <img src="./images/googleimage.png" width="500"/>
-                </div>
+                <img src="./images/googleimages.png" width="600"/>
                 <form action="https://google.com/search" id="searchbar">
                     <input type="text" name="q" class="searchfield">
+                    <input type="hidden" name="tbm" value="isch" id="searchtermimg">
                     <div class="buttons">
-                        <button type="submit" form="searchbar" formaction="https://google.com/search" class="search">Search</button>
-                        <button form="searchbar" formaction="https://doodles.google/">I'm Feeling Lucky</button>
+                        <button type="submit" form="searchbar" formaction="https://google.com/search">Search Images</button>
                     </div>
                 </form>
             </div>
